@@ -1,0 +1,66 @@
+* body{
+    background-color: white;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    color: black
+}
+
+.evento {
+    background-color: #3cff0096;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 10px;
+}
+
+.evento:hover{
+    background-color: #3e8828;
+}
+
+.Emprendimiento {
+    background-color: #3cff0096;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 5px;
+}
+
+.Emprendimiento:hover{
+    background-color: #3e8828;
+}
+.Formulario {
+    background-color: #66945d;
+    color: white;
+    width: 330px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: none;
+    margin-left: 810px;
+
+}
+
+.EmprendimientoForm {
+    background-color: #66945d;
+    color: white;
+    width: 370px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: none;
+    margin-left: 800px;
+}

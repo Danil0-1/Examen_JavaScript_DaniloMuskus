@@ -1,0 +1,71 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>BucaraEmprende</title>
+    <link rel="stylesheet" href="./css/eventos.css">
+    <link rel="stylesheet" href="./css/inicio.css">
+</head>
+
+<body>
+    <section id="dashboard" class="dashboard">
+        <nav class="menu">
+            <h2>BucaraEmprende</h2>
+            <button data-tooltip="drivers">
+                <a href="inicio.html">Inicio</a>
+            </button>
+            <button data-tooltip="drivers">
+                <a href="eventos.html">Eventos</a>
+            </button>
+            <button data-tooltip="vehicles">
+                <a href="registrarEvento.html">Registrar Evento</a>
+            </button>
+        </nav>
+    </section>
+    <h1>Registrar nuevo evento</h1>
+    <p>Completa el formulario para registrar un nuevo evento de emprendimiento</p>
+    <form class="Formulario" id="feriaForm">
+        <p>Nombre del evento *</p>
+        <input type="text" id="nombreEvento" placeholder="Feria de emprendimiento BucaraEmprende2025">
+        <p>Lugar *</p>
+        <input type="text" id="lugar" placeholder="Centro de convenciones Neomundo">
+        <p>Fecha de inicio</p>
+        <input type="date" id="fechaInicio">
+        <p>Fecha de finalizacion *</p>
+        <input type="date" id="fechaFin">
+        <p>Horario *</p>
+        <input type="text" id="horario" placeholder="9:00 AM - 7:00 PM">
+        <button class="evento" type="submit">Agregar Evento</button>
+    </form>
+
+    <h1>Registrar Emprendimiento</h1>
+    <p>Añadir emprendedor al evento : Buscara Emprende 2</p>
+    <form class="EmprendimientoForm" id="emprendimientoForm">
+        <p>Seleccionar evento *</p>
+        <select id="feriaSelect"></select>
+        <p>Nombre del emprendimiento *</p>
+        <input type="text" id="nombreEmp" placeholder="Nombre del emprendimiento">
+        <p>Categoria *</p>
+        <input type="text" id="categoria" placeholder="Categoria">
+        <p>Descripción *</p>
+        <textarea id="descripcionEmp" placeholder="Descripción"></textarea>
+        <p>Enlace a redes sociales *</p>
+        <input type="url" id="redSocial" placeholder="Red Social">
+        <h2>Producto #1</h2>
+        <p>Nombre *</p>
+        <input type="text" id="nombreProd" placeholder="Nombre del producto">
+        <p>Descripción *</p>
+        <textarea id="descripcionProd" placeholder="Descripción del producto"></textarea>
+        <p>Precio *</p>
+        <input type="number" id="precioProd" placeholder="Precio">
+        <p>URL de la foto *</p>
+        <input type="text" id="fotoProd" placeholder="URL de la foto">
+        <button class= "Emprendimiento" type="submit">Agregar Emprendimiento</button>
+    </form>
+
+    <h2>Eventos Registrados</h2>
+    <div id="listaFerias"></div>
+
+    <script src="./components/evento.js"></script>
+</body>
+
+</html>
